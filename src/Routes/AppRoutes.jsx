@@ -17,8 +17,6 @@ import Pavanhjong from '../componenets/Admin/Kanjong/Pavanhjong'
 import LaiyKanjong from '../componenets/Admin/Kanjong/LaiyKanjong'
 // import { elements } from 'chart.js'
 import Laiylaoiy from '../componenets/Admin/Kanjong/Laiylaoiy/Laiylaoiy'
-import FormText from '../componenets/Admin/sunyasao/FormText'
-import CardForm from '../componenets/Admin/sunyasao/CardForm'
 
 
 
@@ -40,13 +38,7 @@ function AppRoutes() {
               {path: 'laiylaoiy/:id' ,element:<Laiylaoiy/>}
             ]
           },
-          {path: 'sunyasoa',element:<Sunyasoa/>,
-            children:[
-              {index:true,element:<CardForm/>},
-              {path:'cardform',element:<CardForm/>},
-              {path:'formtext',element:<FormText/>},
-            ]
-          },
+          {path: 'sunyasoa',element:<Sunyasoa/>},
           {path: 'phusao',element:<Phusao/>},
           {path: 'sumlangern',element:<Sumlangern/>},
           {path: 'tidnee',element:<Tidnee/>},
