@@ -19,6 +19,7 @@ import LaiyKanjong from '../componenets/Admin/Kanjong/LaiyKanjong'
 import Laiylaoiy from '../componenets/Admin/Kanjong/Laiylaoiy/Laiylaoiy'
 import FormText from '../componenets/Admin/sunyasao/FormText'
 import CardForm from '../componenets/Admin/sunyasao/CardForm'
+import FormList from '../componenets/Admin/sunyasao/FormList'
 
 
 
@@ -45,6 +46,7 @@ function AppRoutes() {
               {index:true,element:<CardForm/>},
               {path:'cardform',element:<CardForm/>},
               {path:'formtext',element:<FormText/>},
+              {path:'formlist/:id',element:<FormList/>}
             ]
           },
           {path: 'phusao',element:<Phusao/>},
@@ -57,7 +59,7 @@ function AppRoutes() {
           {path: 'manager',element:<Manager/>},
         ]
       },
-      // {path: '*',element:<Error/>},
+      {path: '*',element:<Error/>},
     ])
   return (
     <div>
